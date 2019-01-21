@@ -1,0 +1,41 @@
+<div style="width:1080px;margin:10px auto;">
+   <div class="toggle">
+        <div class="my-tree">
+            <form action="" method="post" id="formsearch">
+                <select name="categoryid" id="categoryid">
+                    <option value="">ALL</option>
+                    <option value="Unit">Units</option>
+                    <option value="Lab">Labs</option>
+                </select>
+            </form>
+		<dl>
+		    {% for menu in menuArray %}
+		        <dt><i class="fa fa-minus-square"></i>{{ menu.unit }}</dt>
+		        <dd>
+			        <ul>{% for menuNode in menu.node %}
+			            
+			            {% if menuNode.category == 'Unit' %}
+				           <li class="Unit">
+				              <a {% if id == menuNode.id %}class="selects"{% endif %} href="/course/unit{{menuNode.id}}/class{{menuNode.id}}?to={{menuNode.id}}">
+				                <i class="glyphicon glyphicon-blackboard"></i>{{menuNode.category}}-{{menuNode.title}}
+				              </a>
+				           </li>
+			              {% else %}
+			              <li class="Lab">
+				              <a {% if id == menuNode.id %}class="selects"{% endif %} href="/course/unit{{menuNode.id}}/lab{{menuNode.id}}?to={{menuNode.id}}">
+				                <i class="fa fa-flask"></i>{{menuNode.category}}-{{menuNode.title}}
+				              </a>
+			              </li>
+			            {% endif %}
+			            {% endfor %}
+			        </ul>
+		        </dd>
+		    {% endfor %}
+		</dl>
+		</div>
+	</div>
+	<div style="width:760px;float:right;">
+	        {{videoArray.body|raw }}
+	</div>
+</div>
+<div style="clear:both;"></div>

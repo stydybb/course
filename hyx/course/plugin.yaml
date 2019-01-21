@@ -1,0 +1,11 @@
+plugin:
+    name: 'hyx.course::lang.plugin.name'
+    description: 'hyx.course::lang.plugin.description'
+    author: hyx
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-course:
+        label: Course
+        url: hyx/course/courses
+        icon: icon-adjust

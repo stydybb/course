@@ -1,0 +1,10 @@
+name: Courses
+form: $/hyx/course/models/course/fields.yaml
+modelClass: Hyx\Course\Models\Course
+defaultRedirect: hyx/course/courses
+create:
+    redirect: 'hyx/course/courses/update/:id'
+    redirectClose: hyx/course/courses
+update:
+    redirect: hyx/course/courses
+    redirectClose: hyx/course/courses

@@ -1,0 +1,21 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    body:
+        label: body
+        size: large
+        span: left
+        type: richeditor
+    category:
+        label: Category
+        options:
+            Lab: Lab
+            Unit: Unit
+        span: left
+        type: balloon-selector
+    unit:
+        label: Unit
+        span: left
+        type: text

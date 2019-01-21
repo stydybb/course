@@ -1,0 +1,12 @@
+list: $/hyx/course/models/course/columns.yaml
+modelClass: Hyx\Course\Models\Course
+title: Courses
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'hyx/course/courses/update/:id'

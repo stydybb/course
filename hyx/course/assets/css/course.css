@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+#categoryid{width:90%}
+.toggle{background-color: #eee;width: 28%;float:left;color:#555;}
+.my-tree{padding-left: 20px;padding-top: 20px;}
+.toggle dl{height:500px;overflow: auto;}
+.toggle dl dt {cursor: pointer;font-size: 15px;display: block;padding: 10px 0 0;font-family: wf_segoe-ui_normal,'Segoe UI',Segoe,'Segoe WP',Tahoma,Verdana,Arial,sans-serif;font-weight: 400;line-height: 1.4em;}
+.toggle dl dd {font-size: .8em;}
+.toggle dl dd h2 { font-size:15px; }
+.toggle dl dd ul{padding-left:10px;}
+.toggle dl dd ul li {padding: 10px 0 0 10px;list-style:none; font-family: wf_segoe-ui_normal,'Segoe UI',Segoe,'Segoe WP',Tahoma,Verdana,Arial,sans-serif;font-weight: 400;line-height: 1.4em;}
+.toggle dl dd ul li a{color:#666;}
+.toggle dl dd ul li a:hover{color:#01b0ef;}
+.toggle dl dt:hover{color:#01b0ef;}
+.toggle dl dd ul li a.selects{color:#01b0ef;}

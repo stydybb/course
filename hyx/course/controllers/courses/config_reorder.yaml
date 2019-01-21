@@ -1,0 +1,4 @@
+title: Courses
+modelClass: Hyx\Course\Models\Course
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: ID
+        type: text
+    title:
+        label: Title
+        type: text
+    category:
+        label: Category
+        type: text
+    unit:
+        label: unit
+        type: text
